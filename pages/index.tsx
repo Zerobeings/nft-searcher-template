@@ -18,9 +18,11 @@ const Home: NextPage = () => {
       <div className={styles.container}>
       <NFTSearcherPackNOSSR/>
       </div>
-      <Request />
-      <PoweredBy />
-      <GitHub />
+      <div className={styles.headerBg}>
+        <Request />
+        <PoweredBy />
+        <GitHub />
+      </div>
     </main>
   );
 };

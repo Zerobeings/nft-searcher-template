@@ -60,6 +60,23 @@
     text-decoration: underline;
 }
 
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 30px;
+  }
+
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column; 

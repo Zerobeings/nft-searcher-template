@@ -1,6 +1,6 @@
 .power {
     position: fixed;
-    bottom: 1rem;  
+    top: 1rem;  
     right: 1rem;    
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
 
   .git {
     position: fixed;
-    bottom: 1rem; 
+    top: 1rem; 
     right: 4rem;    
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@
 
   .request {
     position: fixed;
-    bottom: 1rem; 
+    top: 1rem; 
     left: 1rem;    
     display: flex;
     align-items: center;
