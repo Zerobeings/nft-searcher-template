@@ -17,3 +17,17 @@
     cursor: pointer;
     gap: 0.25rem; 
   }
+
+  .request {
+    position: fixed;
+    bottom: 1rem; 
+    left: 1rem;    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.25rem; 
+  }
+
+  .request:hover {
+    text-decoration-line: underline;
+  }

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { NextPage } from "next";
 import {PoweredBy} from "../components/PoweredBy/PoweredBy";
 import {GitHub} from "../components/PoweredBy/GitHub";
+import {Request} from "../components/PoweredBy/Request";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <div className={styles.container}>
       <NFTSearcherPackNOSSR/>
       </div>
+      <Request />
       <PoweredBy />
       <GitHub />
     </main>

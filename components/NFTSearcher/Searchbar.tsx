@@ -22,6 +22,7 @@ export default function NFTSearcherPackNOSSR(){
     <a href="https://thirdweb.com"
       target="_blank"
       rel="noopener noreferrer"
+      className={styles.link}
     > thirdweb </a> 
     projects & more</h1>
     <h3 className={styles.heading}>yarn add nft-searcher</h3>
