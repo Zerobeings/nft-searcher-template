@@ -1,0 +1,72 @@
+.heading {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #333; 
+    width: 300px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.mainHeading {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.button{
+    background-color: #333; 
+    color: lime; 
+    font-family: monospace; 
+    padding: 10px;
+    border-radius: 15px; 
+    width: 300px; 
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.mixtape {
+    flex:1;
+    min-height: 300px;
+    text-align: center;
+}
+
+.console {
+    background-color: #333; 
+    color: lime; 
+    font-family: monospace; 
+    padding: 10px;
+    overflow: auto;
+    max-height: 300px;
+    border-radius: 15px; 
+    width: 800px; 
+    flex: 1; 
+    margin-right: 55px;
+    margin-left: 30px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+
+    .console {
+        width: 350px;
+        margin-top: -110px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}

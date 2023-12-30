@@ -1,0 +1,19 @@
+.power {
+    position: fixed;
+    bottom: 1rem;  
+    right: 1rem;    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.25rem;   
+  }
+
+  .git {
+    position: fixed;
+    bottom: 1rem; 
+    right: 4rem;    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.25rem; 
+  }
