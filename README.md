@@ -1,14 +1,14 @@
-# MixtapeSearch
+# NFTSearcher
 
-MixtapeSearch is a React component that provides a search bar for fetching and displaying NFTs from different networks. It uses the `nft-fetcher` library to fetch NFTs based on the user's search input.
+NFTSearcher is a React component that provides a search bar for fetching and displaying NFTs from different networks. It uses the `nft-fetcher` library to fetch NFTs based on the user's search input.
 
 ## Installation
 
 ```bash
-yarn add mixtape-search
+yarn add nft-searcher
 ```
 
-mixtape-search has two peer dependencies: `react` and `react-dom`. Make sure they are installed in your project.
+nft-searcher has two peer dependencies: `react` and `react-dom`. Make sure they are installed in your project.
 
 ```bash
 yarn add react react-dom
@@ -16,13 +16,13 @@ yarn add react react-dom
 
 ## Usage
 
-Create a component in your project and import the `MixtapeSearch` component from the `mixtape-search` package.
+Create a component in your project and import the `NFTSearcher` component from the `nft-searcher` package.
 
 ```jsx
-import MixtapeSearch from "mixtape-search"
+import NFTSearcher from "nft-searcher"
 import { useState, useEffect } from "react";
 
-export default function MixtapeSearchPackNOSSR(){
+export default function NFTSearcherPackNOSSR(){
   const [fetchedNFTs, setFetchedNFTs] = useState<any[]>([]);
 
   const handleNFTsFetched = (nfts: any[]) => {
@@ -32,7 +32,7 @@ export default function MixtapeSearchPackNOSSR(){
 
   return (
     <div>
-      <MixtapeSearch 
+      <NFTSearcher 
         activeNetwork={"ethereum"}
         theme={"dark"}
         onNFTsFetched={handleNFTsFetched}
@@ -42,16 +42,16 @@ export default function MixtapeSearchPackNOSSR(){
 }
 ```
 
-Next, dynamically import the `MixtapeSearchPackNOSSR` component in your page.
+Next, dynamically import the `NFTSearcherPackNOSSR` component in your page.
 
 ```jsx
 import dynamic from "next/dynamic";
-const MixtapeSearchPackNOSSR = dynamic(() => import('../components/MixtapeSearch/Searcher'), { ssr: false });
+const NFTSearcherPackNOSSR = dynamic(() => import('../components/NFTSearcher/Searcher'), { ssr: false });
 
 export default function Home() {
   return (
     <div>
-      <MixtapeSearchPackNOSSR />
+      <NFTSearcherPackNOSSR />
     </div>
   )
 }
@@ -74,12 +74,12 @@ export default function Home() {
 
 You can customize the appearance of the search bar by providing CSS styles and class names for various elements. The `style` prop is an object where the keys are the names of the elements and the values are CSS style objects. The `classNames` prop is similar, but the values are class names.
 
-Here's an example of how you can use the `style` and `classNames` props to customize the appearance of the MixtapeSearch component:
+Here's an example of how you can use the `style` and `classNames` props to customize the appearance of the NFTSearcher component:
 
 ```jsx
-import MixtapeSearch from 'mixtape-search';
+import NFTSearcher from 'nft-searcher';
 
-<MixtapeSearch
+<NFTSearcher
   activeNetwork={"ethereum"}
   limit={10}
   start={0}
@@ -119,7 +119,7 @@ import MixtapeSearch from 'mixtape-search';
 
 In this example, the `style` prop is used to provide CSS styles for the search container, search input, search button, results container, and result items. The `classNames` prop is used to provide custom class names for the same elements.
 
-Please note that the actual style and class names that you can use will depend on the implementation of the MixtapeSearch component. The keys used in the `style` and `classNames` objects (like `searchContainer`, `searchInput`, etc.) are just examples and might not correspond to the actual elements in the MixtapeSearch component. You'll need to refer to the MixtapeSearch documentation or source code to find out the correct keys to use.
+Please note that the actual style and class names that you can use will depend on the implementation of the NFTSearcher component. The keys used in the `style` and `classNames` objects (like `searchContainer`, `searchInput`, etc.) are just examples and might not correspond to the actual elements in the NFTSearcher component. You'll need to refer to the NFTSearcher documentation or source code to find out the correct keys to use.
 
 ## Fetching NFTs
 
@@ -130,6 +130,8 @@ Suggestions are displayed in a dropdown menu below the search bar. The user can 
 A contract address can also be entered in the search bar. When a contract address is entered, the component fetches all the NFTs from that contract and passes them to the `onNFTsFetched` callback function.
 
 If a collection does not appear it has not been indexed yet. To request a collection to be indexed, please submit a request at https://indexer.locatia.app. Once the collection is indexed it will also appear in the suggestions dropdown.
+
+If you would like your thirdweb collection added to the directory, please open an issue at https://github.com/Zerobeings/nft-indexer with the collection name and contract address.
 
 ## Network Support
 
@@ -162,7 +164,7 @@ Step 3: Create an nft-fetcher.d.ts file under the `typings` folder of your proje
 declare module 'nft-fetcher';
 ```
 
-## MixtapeSearch License
+## NFTSearcher License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 

@@ -1,8 +1,8 @@
-import MixtapeSearch from "mixtape-search"
+import NFTSearcher from "nft-searcher"
 import { useState, useEffect } from "react";
 import styles from "./Searchbar.module.css";
 
-export default function MixtapeSearchPackNOSSR(){
+export default function NFTSearcherPackNOSSR(){
   const [fetchedNFTs, setFetchedNFTs] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -18,12 +18,17 @@ export default function MixtapeSearchPackNOSSR(){
 
   return (
     <>
-    <h1 className={styles.mainHeading}>A searchbar for NFTs</h1>
-    <h3 className={styles.heading}>yarn add mixtape-search</h3>
+    <h1 className={styles.mainHeading}>A searchbar for 
+    <a href="https://thirdweb.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    > thirdweb </a> 
+    projects & more</h1>
+    <h3 className={styles.heading}>yarn add nft-searcher</h3>
     <div className={styles.container}>
       <div className={styles.mixtape}> 
       <button className={styles.button} onClick={() => setDarkMode(!darkMode)}>Toggle Searchbar Theme</button>
-          <MixtapeSearch 
+          <NFTSearcher 
               activeNetwork={"ethereum"}
               theme={darkMode ? "dark" : "light"} // "light" or "dark"
               onNFTsFetched={handleNFTsFetched}

@@ -8,14 +8,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
-const MixtapeSearchPackNOSSR = dynamic(() => import('../components/MixtapeSearch/Searchbar'), { ssr: false });
+const NFTSearcherPackNOSSR = dynamic(() => import('../components/NFTSearcher/Searchbar'), { ssr: false });
 
 const Home: NextPage = () => {
   
   return (
     <main>
       <div className={styles.container}>
-      <MixtapeSearchPackNOSSR/>
+      <NFTSearcherPackNOSSR/>
       </div>
       <PoweredBy />
       <GitHub />

@@ -2047,7 +2047,7 @@
     mime "3.0.0"
     tiny-invariant "^1.2.0"
 
-"@thirdweb-dev/react@^4":
+"@thirdweb-dev/react@^4", "@thirdweb-dev/react@^4.1.17":
   version "4.1.17"
   resolved "https://registry.yarnpkg.com/@thirdweb-dev/react/-/react-4.1.17.tgz#ccd4a5e564601a26b578e24b30579fc34cc12b29"
   integrity sha512-Tq0iJh1znoexz4bxOvj0e7wcmLSmtXcKM0yIVxkxXLMwKD+IkZrGxFG115naGMn9z1Ot8zMWXhTZbSIPo/Vqgg==
@@ -4694,10 +4694,15 @@ flatted@^3.2.9:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.9.tgz#7eb4c67ca1ba34232ca9d2d93e9886e611ad7daf"
   integrity sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==
 
-follow-redirects@^1.14.0, follow-redirects@^1.14.9, follow-redirects@^1.15.0:
+follow-redirects@^1.14.0, follow-redirects@^1.14.9:
   version "1.15.3"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.3.tgz#fe2f3ef2690afce7e82ed0b44db08165b207123a"
   integrity sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==
+
+follow-redirects@^1.15.0:
+  version "1.15.4"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.4.tgz#cdc7d308bf6493126b17ea2191ea0ccf3e535adf"
+  integrity sha512-Cr4D/5wlrb0z9dgERpUL3LrmPKVDsETIJhaCMeDfuFYcqa5bldGV6wBsAN6X/vxlXQtFBMrXdXxdL8CbDTGniw==
 
 for-each@^0.3.3:
   version "0.3.3"
@@ -6135,20 +6140,6 @@ minimist@^1.2.0, minimist@^1.2.6:
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.8.tgz#c1a464e7693302e082a075cee0c057741ac4772c"
   integrity sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==
 
-mixtape-search@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/mixtape-search/-/mixtape-search-0.0.6.tgz#f397f75b724a11bc5826f645afe7fd44314ca788"
-  integrity sha512-yXhVvjNNikT//EaN8mf9V+Q84YqTyeAtr3ATNun1l7NEqJCJqJiPpY/FUB97xpMowPexX46xoMLLaguBxkHjTw==
-  dependencies:
-    "@babel/plugin-proposal-class-properties" "^7.18.6"
-    crypto-browserify "^3.12.0"
-    multiformats "^13.0.0"
-    nft-fetcher "^1.0.5"
-    react "^18.2.0"
-    react-dom "^18.2.0"
-    stream-browserify "^3.0.0"
-    webpack-bundle-analyzer "^4.10.1"
-
 mkdirp@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-1.0.4.tgz#3eb5ed62622756d79a5f0e2a221dfebad75c2f7e"
@@ -6302,6 +6293,21 @@ nft-fetcher@^1.0.5:
     react-dom "^18.2.0"
     sql.js "^1.9.0"
     stream-browserify "^3.0.0"
+
+nft-searcher@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/nft-searcher/-/nft-searcher-0.0.2.tgz#8d68355476bc46283ed202647e9be0310b2849e9"
+  integrity sha512-/CWfU9LeDhg1g4ktAI1rL34pPgmOTNRqp4QmN12HUAkEzKv5iTStUUG3r/oMlJPnvNG61u1yj9CqcJyotPwcZw==
+  dependencies:
+    "@babel/plugin-proposal-class-properties" "^7.18.6"
+    "@thirdweb-dev/react" "^4.1.17"
+    crypto-browserify "^3.12.0"
+    multiformats "^13.0.0"
+    nft-fetcher "^1.0.5"
+    react "^18.2.0"
+    react-dom "^18.2.0"
+    stream-browserify "^3.0.0"
+    webpack-bundle-analyzer "^4.10.1"
 
 node-addon-api@^2.0.0:
   version "2.0.2"

@@ -1,5 +1,5 @@
 {
-  "name": "mixtape-search-template",
+  "name": "nft-searcher-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,9 +15,9 @@
     "@thirdweb-dev/sdk": "^4",
     "@vercel/analytics": "^1.1.1",
     "ethers": "^5",
-    "mixtape-search": "^0.0.6",
     "next": "^13",
     "nextjs-progressbar": "^0.0.16",
+    "nft-searcher": "^0.0.2",
     "react": "^18.2",
     "react-dom": "^18.2"
   },

@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
     dAppMeta={{
-      name: "mixtape-search",
+      name: "nft-searcher",
       description: "locatia's mixtape searchbar template",
       logoUrl: "https://indexer.locatia.app/icon-384x384.png",
       url: "https://indexer.locatia.app",
@@ -54,12 +54,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       />
       <Head>
         <meta charSet="UTF-8"/>
-        <title>mixtape-search</title>
+        <title>nft-searcher</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@art_locatia"/>
-        <meta name="twitter:title" content="mixtape-search"/>
+        <meta name="twitter:title" content="nft-searcher"/>
         <meta name="twitter:description" content="locatia's mixtape searchbar template."/>
         <meta name="twitter:image" content="https://indexer.locatia.app/icon-384x384.png"/>
         <meta property="og:url" content="https://indexer.locatia.app"/>
