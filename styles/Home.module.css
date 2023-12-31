@@ -31,7 +31,7 @@
   .container {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
+    margin-top: 50px;
   }
 
   .title {
@@ -39,6 +39,10 @@
     line-height: 1;
     font-size: 1.5rem;
     text-align: center;
+  }
+
+  .headerBg{
+    height: 70px;
   }
 
 }

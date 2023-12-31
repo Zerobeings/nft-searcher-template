@@ -31,3 +31,10 @@
   .request:hover {
     text-decoration-line: underline;
   }
+
+  @media (max-width: 768px) {
+    .request {
+      font-size: 0.75rem;
+      width: 250px;
+    }
+  }
