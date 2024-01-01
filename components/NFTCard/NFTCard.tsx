@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 interface Props {
   nft: any;
   network: string;
+  onAttributeSelect: (selectedAttribute: string, tokenStart: number) => Promise<void>;
+  tokenStart: number;
 }
 
 interface Attribute {
@@ -13,12 +15,11 @@ interface Attribute {
   value: string;
 }
 
-export default function NFTCard({ nft, network }: Props) {
+export default function NFTCard({ nft, network, onAttributeSelect, tokenStart}: Props) {
 
   const handleAttributeClick = (attribute: string) => {
-    console.log("attribute", attribute);
-    //TODO: add search functionality
-  }
+    onAttributeSelect(attribute, tokenStart); 
+  };
 
   return (
     <>
