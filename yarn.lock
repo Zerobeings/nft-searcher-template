@@ -6094,10 +6094,10 @@ nft-fetcher@^1.0.6:
     sql.js "^1.9.0"
     stream-browserify "^3.0.0"
 
-nft-searcher@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/nft-searcher/-/nft-searcher-1.0.0.tgz#a962572992059434554812a307395013f9482788"
-  integrity sha512-Bw/314v4JEienJp4fAE7rl6KRMh2cAzU2zpRO3dNYdxcaDw7bpd0zd//MFmYMyR5E+rkcIXyivFyszBauZT4IA==
+nft-searcher@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/nft-searcher/-/nft-searcher-1.0.2.tgz#6087bcb246d5b8ef8466c630d8ba76d0ecf15293"
+  integrity sha512-SbvBERq5oqxfcxbYf3tP4kHwLd8M8Fv4HKGNmLMutDWwl2rHDggwt8ALRsAbJBxzXns7SFKLFCmxgi6ANC6krw==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.18.6"
     "@thirdweb-dev/react" "^4.1.17"
