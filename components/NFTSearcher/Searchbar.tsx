@@ -4,6 +4,7 @@ import styles from "./Searchbar.module.css";
 import NFTCard from "../NFTCard/NFTCard";
 import Filter from "../Filter/Filter";
 import Image from "next/image";
+import { useChain, ConnectWallet } from "@thirdweb-dev/react";
 
 interface Attributes {
   [key: string]: string[];
@@ -13,9 +14,23 @@ export default function NFTSearcherPackNOSSR(){
   const [fetchedNFTs, setFetchedNFTs] = useState<any[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
   const [darkMode, setDarkMode] = useState<boolean>(false);
-  const network = "ethereum"; // "ethereum" or "polygon" match the network set up in the thirdweb-react provider
   const [attributes, setAttributes] = useState<Attributes>({});
   const [allNFTs, setAllNFTs] = useState<any[]>([]);
+  const chain = useChain();
+  const [network, setNetwork] = useState<string>("");
+
+  // set network and feed into searcher tool
+  useEffect(() => {
+    if (chain && chain.chain.toLowerCase() === "eth") {
+      setNetwork("ethereum");
+    } else if (chain && chain.chain.toLowerCase() === "polygon") {
+      setNetwork("polygon");
+    } else if (chain && chain.chain.toLowerCase() === "avax") {
+      setNetwork("avalanche");
+    } else if (chain && chain.chain.toLowerCase() === "ftm") {
+      setNetwork("fantom");
+    }
+  }, [chain]);
 
   const extractAttributes = useCallback((nfts: any[]) => {
     const attributeMap: Attributes = {};

@@ -14,7 +14,7 @@ import Head from 'next/head';
 import { WalletConnect } from "@thirdweb-dev/wallets";
 import { Analytics } from '@vercel/analytics/react';
 import "../styles/globals.css";
-import { Ethereum, Polygon } from "@thirdweb-dev/chains";
+import { Ethereum, Polygon, Fantom, Avalanche } from "@thirdweb-dev/chains";
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     }}
     clientId={process.env.NEXT_PUBLIC_CLIENT_ID as string} // change your client id
     activeChain={activeChain}
-    supportedChains={[Ethereum, Polygon]}
+    supportedChains={[Ethereum, Polygon, Fantom, Avalanche]}
     supportedWallets={[
       metamaskWallet(), 
       localWallet({ persist: true }),
