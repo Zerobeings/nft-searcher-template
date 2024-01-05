@@ -1,7 +1,7 @@
 .power {
     position: fixed;
-    top: 1rem;  
-    right: 1rem;    
+    top: 3rem;  
+    left: 1rem;    
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -10,8 +10,8 @@
 
   .git {
     position: fixed;
-    top: 1rem; 
-    right: 4rem;    
+    top: 2.75rem; 
+    left: 4rem;    
     display: flex;
     align-items: center;
     cursor: pointer;

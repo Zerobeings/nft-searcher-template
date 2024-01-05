@@ -20,9 +20,12 @@ const Home: NextPage = () => {
       </div>
       <div className={styles.headerBg}>
         <Request />
-        <PoweredBy />
-        <GitHub />
+        <div className={styles.wallet}>
+        <ConnectWallet />
+        </div>
       </div>
+      <PoweredBy />
+      <GitHub />
     </main>
   );
 };
