@@ -21,7 +21,7 @@ export default function NFTSearcherPackNOSSR(){
 
   // set network and feed into searcher tool
   useEffect(() => {
-    if (chain && chain.chain.toLowerCase() === "eth") {
+    if (chain && chain.chain.toLowerCase() === "eth" && chain.slug === "eth") {
       setNetwork("ethereum");
     } else if (chain && chain.chain.toLowerCase() === "polygon") {
       setNetwork("polygon");
@@ -29,6 +29,8 @@ export default function NFTSearcherPackNOSSR(){
       setNetwork("avalanche");
     } else if (chain && chain.chain.toLowerCase() === "ftm") {
       setNetwork("fantom");
+    } else if (chain && chain.slug === "frame-testnet") {
+      setNetwork("frame-testnet");
     }
   }, [chain]);
 
